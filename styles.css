@@ -1,0 +1,72 @@
+@media (min-width: 769px) {
+  #navbar {
+    position: fixed; /* Mantiene el nav fijo durante el scroll */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Altura completa de la pantalla */
+    width: 25%; /* Ancho deseado de la barra lateral */
+    overflow-y: auto; /* Permite scroll interno si hay muchos enlaces */
+    background-color: #f8f9fa; /* Color de fondo */
+    border-right: 1px solid #ddd; /* Opcional: separador */
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  }
+  #main-doc {
+    position: relative;
+    left: 25%;
+    width: 71%;
+  }
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Roboto, serif;
+}
+
+#main-doc {
+  margin: 2%;
+}
+
+p, li {
+padding: 10px 0 10px 20px;
+}
+
+code {
+  margin-left: 30px;
+  margin-bottom: 10px;
+  display: block;
+  background-color: lightgray;
+  padding: 15px;
+}
+
+#main-doc header {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#navbar header {
+  width: 100%;
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-align: center;
+  margin: 10px auto;
+}
+
+#nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-ul li {
+  text-align: center;
+  border-top: 1px solid darkgray;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#nav-ul a {
+  text-decoration: none;
+  color: rgb(77, 75, 75);
+  font-weight: bold;
+}
